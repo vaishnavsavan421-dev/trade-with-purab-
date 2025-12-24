@@ -5,6 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Join Telegram</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- ✅ Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src='https://connect.facebook.net/en_US/fbevents.js';
+  s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script');
+  fbq('init', '1173600094256851');
+  fbq('track', 'PageView');
+  </script>
+
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1173600094256851&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- ✅ End Meta Pixel Code -->
+
 </head>
 <body>
 
@@ -18,13 +39,13 @@
     <h1>TRADE WITH PURAB™</h1>
     <p class="subs">31,393 Subscribers</p>
 
-    <a href="https://t.me/+NEwbJUXK2002ODNl" class="join-btn">
+    <a href="https://t.me/+NEwbJUXK2002ODNl" class="join-btn track-btn">
       🚀 JOIN TELEGRAM FREE
     </a>
 
     <p class="hint">👇 Click the button below to join ✅</p>
 
-    <a href="https://t.me/+NEwbJUXK2002ODNl" class="join-btn alt">
+    <a href="https://t.me/+NEwbJUXK2002ODNl" class="join-btn alt track-btn">
       🚀 JOIN TELEGRAM FREE
     </a>
 
@@ -37,5 +58,15 @@
 </div>
 
 <script src="script.js"></script>
+
+<!-- ✅ Button Click Tracking -->
+<script>
+  document.querySelectorAll('.track-btn').forEach(btn => {
+    btn.addEventListener('click', function () {
+      fbq('track', 'JoinTelegram');
+    });
+  });
+</script>
+
 </body>
 </html>
